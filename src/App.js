@@ -2,11 +2,14 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-const Person = () => {
-  name: 'Noel Caceres';
+const Person = {
+  name: ''
+}
+
+let getName = () => {
   return Person.name ? <h1>Name: {Person.name}</h1> : 
     <h1>Name: Unknown</h1>
-}
+  }
 
 class App extends Component {
   render() {
@@ -19,7 +22,7 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <Person />
+        {getName()}
       </div>
     );
   }
