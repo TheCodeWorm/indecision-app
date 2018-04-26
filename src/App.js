@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 const Person = {
-  name: ''
+  name: 'Noel Caceres'
 }
 
 let getName = () => {
