@@ -2,12 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-const person = {
-  name: ""
-}
-
-const PersonName = () => {
-  return person.name ? <h1>Name: {person.name}</h1> : 
+const Person = () => {
+  name: 'Noel Caceres';
+  return Person.name ? <h1>Name: {Person.name}</h1> : 
     <h1>Name: Unknown</h1>
 }
 
@@ -22,7 +19,7 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <PersonName />
+        <Person />
       </div>
     );
   }
